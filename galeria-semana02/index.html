@@ -9,20 +9,29 @@
     />
     <meta name="robots" content="index, follow" />
     <title>Galería de Proyectos | ANDRADE - VEGA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Skip-link para navegabilidad por teclado -->
+    <!-- Skip-link visible al foco para navegabilidad por teclado -->
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
     <header class="header-area">
-      <h1>Galería de Proyectos Técnicos</h1>
-      <nav role="navigation" aria-label="Navegación principal">
-        <ul class="nav-list">
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#nosotros">Integrantes</a></li>
-        </ul>
-      </nav>
+      <div class="header-inner">
+        <p class="header-kicker">Portafolio técnico · UNCP</p>
+        <h1>Galería de Proyectos Técnicos</h1>
+        <nav role="navigation" aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#nosotros">Integrantes</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main id="main-content" class="main-layout">
@@ -36,9 +45,10 @@
         <div class="cards-grid">
           <!-- Tarjeta 1 -->
           <article class="card" data-category="web" data-xml-id="PROJ-001">
+            <p class="card-index" aria-hidden="true">PROJ-001</p>
             <header class="card-header">
-              <h3>Monitoreo de Infraestructura</h3>
               <span class="badge">Sistemas</span>
+              <h3>Monitoreo de Infraestructura</h3>
             </header>
             <div class="card-body">
               <p>
@@ -51,21 +61,23 @@
                 href="#"
                 class="btn"
                 aria-label="Ver detalles sobre Monitoreo de Infraestructura"
-                >Ver Detalle</a
+                >Ver detalle</a
               >
             </footer>
           </article>
 
           <!-- Tarjeta 2 -->
           <article class="card" data-category="security" data-xml-id="PROJ-002">
+            <p class="card-index" aria-hidden="true">PROJ-002</p>
             <header class="card-header">
-              <h3>Seguridad Urbana Cajas</h3>
               <span class="badge">Ciberseguridad</span>
+              <h3>Seguridad Urbana Cajas</h3>
             </header>
             <div class="card-body">
               <p>
                 Plataforma para el análisis situacional y matriz de actores en
-                San Agustín de Cajas.
+                San Agustín de Cajas, con enfoque en la prevención comunitaria y
+                el mapeo de zonas de riesgo.
               </p>
             </div>
             <footer class="card-footer">
@@ -73,16 +85,17 @@
                 href="#"
                 class="btn"
                 aria-label="Ver detalles sobre Seguridad Urbana Cajas"
-                >Ver Detalle</a
+                >Ver detalle</a
               >
             </footer>
           </article>
 
           <!-- Tarjeta 3 -->
           <article class="card" data-category="bpm" data-xml-id="PROJ-003">
+            <p class="card-index" aria-hidden="true">PROJ-003</p>
             <header class="card-header">
-              <h3>Modelado BPMN SENCICO</h3>
               <span class="badge">Procesos</span>
+              <h3>Modelado BPMN SENCICO</h3>
             </header>
             <div class="card-body">
               <p>
@@ -95,21 +108,23 @@
                 href="#"
                 class="btn"
                 aria-label="Ver detalles sobre Modelado BPMN SENCICO"
-                >Ver Detalle</a
+                >Ver detalle</a
               >
             </footer>
           </article>
 
           <!-- Tarjeta 4 -->
           <article class="card" data-category="bi" data-xml-id="PROJ-004">
+            <p class="card-index" aria-hidden="true">PROJ-004</p>
             <header class="card-header">
-              <h3>Dashboard BI Tottus</h3>
               <span class="badge">Analytics</span>
+              <h3>Dashboard BI Tottus</h3>
             </header>
             <div class="card-body">
               <p>
                 Visualización de indicadores clave (KPI) y análisis estadístico
-                en Power BI.
+                en Power BI, integrando datos de ventas y rotación de inventario
+                para la toma de decisiones gerenciales.
               </p>
             </div>
             <footer class="card-footer">
@@ -117,7 +132,7 @@
                 href="#"
                 class="btn"
                 aria-label="Ver detalles sobre Dashboard BI Tottus"
-                >Ver Detalle</a
+                >Ver detalle</a
               >
             </footer>
           </article>
@@ -129,16 +144,22 @@
         id="nosotros"
         aria-label="Información del grupo"
       >
-        <h2>Equipo de Trabajo</h2>
-        <ul>
-          <li><strong>ANDRADE-EGOAVIL</strong> (HTML / A11y / SEO)</li>
-          <li><strong>VEGA-SANABRIA</strong> (CSS / Layout / Debug)</li>
+        <h2>Equipo de trabajo</h2>
+        <ul class="team-list">
+          <li>
+            <span class="team-name">ANDRADE-EGOAVIL</span>
+            <span class="team-role">HTML · A11y · SEO</span>
+          </li>
+          <li>
+            <span class="team-name">VEGA-SANABRIA</span>
+            <span class="team-role">CSS · Layout · Debug</span>
+          </li>
         </ul>
       </aside>
     </main>
 
     <footer class="footer-area">
-      <p>&copy; 2026 Universidad Nacional del Centro del Perú - DAW</p>
+      <p>&copy; 2026 Universidad Nacional del Centro del Perú — DAW</p>
     </footer>
   </body>
 </html>
